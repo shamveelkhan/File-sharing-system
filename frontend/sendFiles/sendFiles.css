@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/laptopBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#drop-box0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(100, 96, 115);
+    border-radius: 15%;
+    height: 80vh;
+    width: 65vw;
+}
+#dropbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(182, 180, 187);
+    border-radius: 15%;
+    height: 77vh;
+    width: 63vw;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    cursor: pointer;
+    color: #75afbe;
+}
+
+#close-nav {
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #75afbe;
+}
+
+#sidenav {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #575757;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+#close-nav {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.nav-content {
+    padding: 40px;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    #menu-toggle {
+        display: block;
+    }
+    #sidenav {
+        width: 0;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    background: rgb(20, 29, 30);
+    font-size: 20px;
+    margin-right: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+    color: #ffffff;
+}
+
+.btn:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid white;;
+    border-left: 5px solid white;;
+    transition: all 1s;
+}
+
+.btn:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid white;;
+    border-right: 5px solid white;;
+    transition: all 1s;
+}
+
+.btn:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.btn:hover:before,
+.btn:hover:after {
+    width: 100%;
+    height: 100%;
+}
