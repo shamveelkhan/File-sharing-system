@@ -161,6 +161,21 @@ h3 {
     border: 0.1rem solid rgb(74, 41, 190);
 }
 
+.icons {
+    height: 7vh;
+    width: 7vh;
+    cursor: pointer;
+}
+
+#iconDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact {
+    display: none;
+}
+
 #submit {
     height: 8vh;
     width: 20vh;
