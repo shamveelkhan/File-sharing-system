@@ -143,10 +143,15 @@ body {
     width: 10vw;
 }
 
+#contact {
+    display: none;
+}
+
 h3 {
     color: rgb(98, 84, 150);
     font-family: Arial;
     font-size: clamp(18px, 5vw, 24px);
+    text-align: center;
 }
 
 /* Hide the default input */
@@ -266,6 +271,17 @@ form {
 #submit:hover:after {
     width: 100%;
     height: 100%;
+}
+
+.icons {
+    height: 7vh;
+    width: 7vh;
+    cursor: pointer;
+}
+
+#iconDiv {
+    display: flex;
+    flex-direction: row;
 }
 
 @media (max-width: 767px) {
